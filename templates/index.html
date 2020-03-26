@@ -6,7 +6,7 @@
         <h1>In order to see the content you must be logged in!</h1>
         {% if request.user.is_authenticated %}
         <form action="#" method="POST">
-
+          {% csrf_token %}
             <h1>Enter the details for the marksheet</h1>
             <label for="sname">Name : </label>
             <input type="text" id="name" name="sname">

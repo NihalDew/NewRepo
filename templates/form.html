@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="" method="POST">
+      {% csrf_token %}
+        <h1>Enter the details for the marksheet</h1>
+        <label for="sname">Name : </label>
+        <input type="text" id="name" name="name">
+        <br><br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
