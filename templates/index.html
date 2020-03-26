@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>In order to see the content you must be logged in!</h1>
+        {% if request.user.is_authenticated %}
+        <form action="#" method="POST">
+
+            <h1>Enter the details for the marksheet</h1>
+            <label for="sname">Name : </label>
+            <input type="text" id="name" name="sname">
+            <br><br><br>
+
+            <label for="rno">R.No : </label>
+            <input type="text" id="rno" name="rno">
+            <br><br><br>
+
+            <label for="sub1">Sub1 : </label>
+            <input type="number" id="sub1" name="sub1">
+            <br><br><br>
+
+            <label for="sub2">Sub2 : </label>
+            <input type="number" id="sub2" name="sub2">
+            <br><br><br>
+
+            <label for="sub3">Sub3 : </label>
+            <input type="number" id="sub3" name="sub3">
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+        {% endif %}
+    </body>
+</html>
